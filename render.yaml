@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: soccer-ai-pro
+    env: python
+    buildCommand: pip install -r requirements.txt && playwright install chromium
+    startCommand: python app.py
+    autoDeploy: true
